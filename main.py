@@ -1,5 +1,10 @@
+import logging
+
 def main():
-    print("Hello from sleep-analytics!")
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s")
+    logger = logging.getLogger(__name__)
+
+    logger.info("Hello from sleep-analytics!")
 
 
 if __name__ == "__main__":
