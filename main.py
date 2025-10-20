@@ -1,6 +1,8 @@
 import json
 import pathlib
 import logging.config
+from urllib.parse import urlencode
+import requests
 
 logger = logging.getLogger("sleep-analytics")
 
@@ -15,6 +17,8 @@ def main():
     logging_setup()
 
     logger.info("Hello from sleep-analytics!")
+
+    # try running the token_request.py script for trying to setup api access
 
 
 if __name__ == "__main__":
